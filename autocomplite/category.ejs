@@ -1,0 +1,11 @@
+<a href="<%= item.link %>">
+    <img class="persoo-autocomplete__categories_image"
+         src="<%= item.imageLink %>"
+         alt="<%= item.title %>"
+    />
+    <span class="persoo-autocomplete__categories_title">
+        <%= item.title ? highlightQuery(item.title) : '' %>
+    <span>
+</a>
+
+
