@@ -49,8 +49,8 @@ or delete them all and add them to your global CSS */
     padding-left: 24px;
     overflow: hidden;
     border-right: 0;
-    background: #F2F2F2;
-    border: 1px solid #F2F2F2 !important;
+    background-color: #F2F2F2 !important;
+    border: none !important;
     border-radius: 4px !important;
 }
 
@@ -405,6 +405,7 @@ TODO use different desing on small screens. List products one below the other wi
     color: #000000;
     padding: 10px 15px 15px 15px;
 }
+
 .persoo-autocompleteDataset__header.persoo-autocompleteDataset-4__header {
     font-family: Rubik, sans-serif;
     font-style: normal;
