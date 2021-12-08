@@ -38,12 +38,12 @@ or delete them all and add them to your global CSS */
 }
 
 .persoo-ac-search-bar__input {
+
     flex: 1 1 auto;
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     width: 100%;
-    font-size: 16px;
-    color: #111;
+    color: #111 !important;
     outline: 0;
     box-shadow: none;
     padding-left: 24px;
@@ -52,7 +52,13 @@ or delete them all and add them to your global CSS */
     background-color: #F2F2F2 !important;
     border: none !important;
     border-radius: 4px !important;
+    font-family: 'Rubik', sans-serif !important;
+    font-size: 14px !important;
+    font-style: normal;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
 }
+
 
 .persoo-ac-search-bar__input::-ms-clear {
     display: none;
@@ -66,16 +72,31 @@ or delete them all and add them to your global CSS */
     border-radius: 0;
     border: none;
     /* change color and size in decoded SVG. Note: svg must be encoded because of IE. */
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2740%27%20height%3D%2740%27%20style%3D%27fill%3Awhite%3B%20stroke%3Anone%27%3E%3Cpath%20d%3D%27M15.553%2031.107c8.59%200%2015.554-6.964%2015.554-15.554S24.143%200%2015.553%200%200%206.964%200%2015.553c0%208.59%206.964%2015.554%2015.553%2015.554zm0-3.888c6.443%200%2011.666-5.225%2011.666-11.668%200-6.442-5.225-11.665-11.668-11.665-6.442%200-11.665%205.223-11.665%2011.665%200%206.443%205.223%2011.666%2011.665%2011.666zm12.21%203.84a2.005%202.005%200%200%201%20.002-2.833l.463-.463a2.008%202.008%200%200%201%202.833-.003l8.17%208.168c.78.78.78%202.05-.004%202.833l-.462.463a2.008%202.008%200%200%201-2.834.004l-8.168-8.17z%27%20fill%3D%27%23fff%27%20fill-rule%3D%27evenodd%27%2F%3E%3C%2Fsvg%3E");
-    background-size: 16px 16px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 21 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.8351 20.9096L18.8354 20.9099L19.9341 19.8208C19.934 19.8207 19.9339 19.8206 19.9338 19.8205L14.0469 13.8032C15.2049 12.3551 15.7846 10.6896 15.7846 8.8125C15.7846 7.36785 15.4352 6.03345 14.7359 4.81219C14.0371 3.59168 13.0826 2.62549 11.8741 1.91559C10.6648 1.20528 9.35011 0.85 7.93269 0.85C6.51527 0.85 5.20361 1.20529 4.00064 1.91577C2.79858 2.62571 1.84739 3.59188 1.14867 4.81219C0.449407 6.03345 0.1 7.36785 0.1 8.8125C0.1 10.2571 0.449407 11.5915 1.14867 12.8128C1.84739 14.0331 2.79858 14.9993 4.00064 15.7092C5.20372 16.4198 6.51861 16.775 7.94231 16.775C9.84235 16.775 11.521 16.1546 12.9723 14.9168L18.8351 20.9096ZM7.94231 15.2445C6.78931 15.2445 5.7294 14.9553 4.75951 14.377C3.78822 13.7979 3.02131 13.0159 2.45714 12.0291C1.89344 11.0431 1.61154 9.97181 1.61154 8.8125C1.61154 7.65319 1.89344 6.58192 2.45714 5.59593C3.02131 4.60913 3.78822 3.82713 4.75951 3.24798C5.72953 2.66958 6.78626 2.38047 7.93269 2.38047C9.07912 2.38047 10.1359 2.66958 11.1059 3.24798C12.0772 3.82713 12.8441 4.60913 13.4082 5.59593C13.9719 6.58192 14.2538 7.65319 14.2538 8.8125C14.2538 9.30884 14.1975 9.79871 14.0847 10.2823C13.9717 10.7667 13.812 11.218 13.6058 11.6369C13.3987 12.0576 13.1507 12.4561 12.8618 12.8325C12.5741 13.2073 12.2491 13.5405 11.8867 13.8324C11.5229 14.1254 11.1343 14.3769 10.7205 14.587C10.3085 14.7962 9.86443 14.9583 9.388 15.0729C8.91228 15.1873 8.43047 15.2445 7.94231 15.2445Z' fill='%23111111' stroke='%23111111' stroke-width='0.3'/%3E%3C/svg%3E%0A");    background-position: center;
+    background-repeat: no-repeat;
+    text-indent: -500px;
+    background-color: #F2F2F2;
+}
+
+.persoo-ac-search-bar__submit:hover {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 21 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.8351 20.9096L18.8354 20.9099L19.9341 19.8208C19.934 19.8207 19.9339 19.8206 19.9338 19.8205L14.0469 13.8032C15.2049 12.3551 15.7846 10.6896 15.7846 8.8125C15.7846 7.36785 15.4352 6.03345 14.7359 4.81219C14.0371 3.59168 13.0826 2.62549 11.8741 1.91559C10.6648 1.20528 9.35011 0.85 7.93269 0.85C6.51527 0.85 5.20361 1.20529 4.00064 1.91577C2.79858 2.62571 1.84739 3.59188 1.14867 4.81219C0.449407 6.03345 0.1 7.36785 0.1 8.8125C0.1 10.2571 0.449407 11.5915 1.14867 12.8128C1.84739 14.0331 2.79858 14.9993 4.00064 15.7092C5.20372 16.4198 6.51861 16.775 7.94231 16.775C9.84235 16.775 11.521 16.1546 12.9723 14.9168L18.8351 20.9096ZM7.94231 15.2445C6.78931 15.2445 5.7294 14.9553 4.75951 14.377C3.78822 13.7979 3.02131 13.0159 2.45714 12.0291C1.89344 11.0431 1.61154 9.97181 1.61154 8.8125C1.61154 7.65319 1.89344 6.58192 2.45714 5.59593C3.02131 4.60913 3.78822 3.82713 4.75951 3.24798C5.72953 2.66958 6.78626 2.38047 7.93269 2.38047C9.07912 2.38047 10.1359 2.66958 11.1059 3.24798C12.0772 3.82713 12.8441 4.60913 13.4082 5.59593C13.9719 6.58192 14.2538 7.65319 14.2538 8.8125C14.2538 9.30884 14.1975 9.79871 14.0847 10.2823C13.9717 10.7667 13.812 11.218 13.6058 11.6369C13.3987 12.0576 13.1507 12.4561 12.8618 12.8325C12.5741 13.2073 12.2491 13.5405 11.8867 13.8324C11.5229 14.1254 11.1343 14.3769 10.7205 14.587C10.3085 14.7962 9.86443 14.9583 9.388 15.0729C8.91228 15.1873 8.43047 15.2445 7.94231 15.2445Z' fill='%23EF7B00' stroke='%23EF7B00' stroke-width='0.3'/%3E%3C/svg%3E%0A");    width: 42px !important;
+    height: 42px !important;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 0;
+    border: none;
+    /* change color and size in decoded SVG. Note: svg must be encoded because of IE. */
+    background-size: 24px 24px;
     background-position: center;
     background-repeat: no-repeat;
     text-indent: -500px;
+    background-color: #F2F2F2;
 }
 
 .persoo-ac-search-bar__submit:hover,
 .persoo-ac-search-bar__submit:focus {
-    background-color: #333;
+    /*background-color: #333;*/
+
 }
 
 .persoo-ac-search-bar__form--visible .persoo-ac-search-bar__input {
@@ -604,7 +625,7 @@ TODO use different desing on small screens. List products one below the other wi
 
 @media (min-width: 1200px) {
     .persoo-autocompleteDataset__header.persoo-autocompleteDataset-5__header {
-        padding-top: 20px !important;
+        padding-top: 10px !important;
     }
 
     .persoo-ac-search-bar__dropdown {
@@ -615,16 +636,20 @@ TODO use different desing on small screens. List products one below the other wi
     #persooAutocompleteDropdown {
         display: flex;
         flex-direction: row;
+        max-width: 1500px;
+        margin: 0 auto;
     }
 
     .persoo-autocompleteDropdown__column--left {
         order: 1;
         width: 30%;
+        padding-top: 10px;
     }
 
     .persoo-autocompleteDropdown__column--right {
         order: 2;
         width: 70%;
+        padding-top: 10px;
     }
 
     .persoo-autocompleteDataset-1__items__item {
