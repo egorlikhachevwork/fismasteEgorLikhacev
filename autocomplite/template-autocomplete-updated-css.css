@@ -572,14 +572,13 @@ TODO use different desing on small screens. List products one below the other wi
     font-size: 12px;
     line-height: 14px;
     color: #FFFFFF;
-    margin: 0px 10px;
     align-items: flex-start;
     padding: 5px;
     width: 98px;
     height: 24px;
     background: #5B9C38;
     border-radius: 6px;
-    left: 10px;
+    left: 6px;
 }
 
 @media (min-width: 481px) {
